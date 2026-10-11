@@ -12,6 +12,14 @@ Clone this repository into your personal Codex skills directory:
 git clone https://github.com/jaouadou/explain-for-understanding.git ~/.codex/skills/explain-for-understanding
 ```
 
-Codex can select the skill for complex explanations. You can also invoke it explicitly with `$explain-for-understanding`.
+Codex can select the skill for explanations. You can also invoke it explicitly with `$explain-for-understanding`.
+
+## Make it a personal default
+
+Automatic skill selection is possible, but is not guaranteed for every reply. To apply this preference across your Codex tasks, add this line to `~/.codex/AGENTS.md`:
+
+```md
+For every response that explains a concept, result, or completed work to me, use the installed `explain-for-understanding` skill by default. Respect any format I explicitly request.
+```
 
 The complete skill is in [SKILL.md](SKILL.md).

@@ -1,6 +1,6 @@
 ---
 name: explain-for-understanding
-description: Use when explaining a complex concept, result, or completed work to a person. Prefer clear prose, diagrams, interactive HTML, or explainer video when the format helps them understand and inspect it.
+description: Use whenever explaining a concept, result, or completed work to a person. Prefer clear prose, diagrams, interactive HTML, or explainer video when the format helps them understand and inspect it.
 ---
 
 # Explain for understanding
