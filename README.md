@@ -1,8 +1,12 @@
 # Explain for understanding
 
-A small, portable Agent Skill that favors the clearest format for explaining complex work: direct writing, a diagram, an interactive HTML page, or an explainer video when it helps someone understand and inspect the result.
+A portable Agent Skill for direct answers, visual explanations, and inspectable results. It applies to progress updates and final answers.
 
-Inspired by [Andrej Karpathy's post](https://x.com/karpathy/status/2105819303471976479).
+- Lead with the useful point. Default to one short paragraph or up to three bullets; keep progress updates to one or two sentences.
+- Remove filler and repetition. Preserve natural grammar, technical precision, uncertainty, and necessary detail.
+- Use available display tools by default: render diagrams, charts, images, interactive HTML, or artifact previews instead of describing everything in plain text. Show the result and keep supporting prose brief.
+
+The user's requested format and depth take precedence. Brief facts and status updates can stay in text. Use text as a fallback when suitable display tools are unavailable. No specific tool or provider is required.
 
 ## Install the skill
 
@@ -22,7 +26,7 @@ Codex and Claude Code can load the same `SKILL.md` because both support the Agen
 Skill selection alone does not ensure the preference shapes every explanation. For Codex, add this line to `~/.codex/AGENTS.md`:
 
 ```md
-For every response that explains a concept, result, or completed work to me, use the installed `explain-for-understanding` skill by default. Respect any format I explicitly request.
+Use the installed `explain-for-understanding` skill for explanations, progress updates, and final answers. Respect any format or level of detail I explicitly request.
 ```
 
 For Claude Code, install the included [output style](claude/output-styles/explain-for-understanding.md) and select it globally:
